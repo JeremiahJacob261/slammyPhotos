@@ -95,3 +95,7 @@ visibility: hidden;
         visibility: visible;
       }
 }
+#icons{
+  padding: 8px;
+  margin-left: 5px;
+}
