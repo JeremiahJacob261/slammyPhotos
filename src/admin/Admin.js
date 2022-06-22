@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { db, storage } from "../components/firebase-config";
-import { render } from "react-dom";
-import { Form, Button, File, Alert } from "react-bootstrap";
-import { collection, addDoc, doc, setDoc } from "firebase/firestore";
+import { Form, Button, Alert } from "react-bootstrap";
+import { collection, addDoc } from "firebase/firestore";
 import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
 import { v4 } from "uuid";
 import './admin.css';
