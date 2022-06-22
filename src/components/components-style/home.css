@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 /*for small screens below*/
 @media screen and (max-width: 480px) {
 #home-img {
@@ -19,6 +20,7 @@
   }
   .home-start-text {
     flex: 1;
+    font-family: 'Quicksand', sans-serif;
   }
   #side {
     visibility: hidden;

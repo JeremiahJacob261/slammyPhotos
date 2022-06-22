@@ -17,7 +17,7 @@ class Home extends React.Component {
   <div class="home">
    <Container>
    <div id="home-image-top">
-    <img id="top" src="https://cdn.mos.cms.futurecdn.net/yL3oYd7H2FHDDXRXwjmbMf.jpg"/>
+    <img id="top" src="image.png"/>
     </div>
     <Row class="home-start">
     <Col class="home-start-text" sm={6}>
