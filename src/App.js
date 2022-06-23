@@ -19,6 +19,7 @@ function App() {
    <Route path="/product" element={<Products/>}/>
    <Route path="/admin" element={<Admin/>}/>
    <Route path="/pay" element={<Flutterwave/>}/>
+   <Route path="/pays" element={<PaySt/>}/>
  </Routes>
  <Footer/>
   </Router>
