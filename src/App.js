@@ -7,6 +7,7 @@ import Footer from './components/footer.js';
 import Products from './components/Products';
 import Admin from './admin/Admin';
 import Flutterwave from './components/flutterwave';
+import PaySt from './components/paystack'
 
 function App() {
   return (
