@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap');
 /*large screens below*/
 @media screen and (min-width: 540px) {
     h1,
@@ -34,8 +35,9 @@
       margin: 10px 10px 10px 10px;
       text-decoration-style: none;
       padding: 2px;
-      font-family: "Rajdhani", sans-serif;
+      font-family: 'Dosis', sans-serif;
       font-weight: 600;
+      flex: 1;
     }
     .tnk:hover {
       margin: 10px 10px 9px 10px;
