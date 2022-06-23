@@ -15,6 +15,7 @@
       padding: 0px;
       justify-content: center;
       align-items: center;
+      position: fixed;
     }
     .product-info {
       display: block;
@@ -58,13 +59,14 @@ visibility: hidden;
         width: 100%;
         height: fit-content;
         background-color: rgb(253, 253, 253);
-        border-bottom: 1px solid rgb(228, 224, 224);
+        border-bottom: 7px solid linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
         display: flex;
         padding: 0px;
         justify-content: center;
         align-items: center;
+        position: fixed;
       }
-      .mainHeader.pages {
+    .mainHeader.pages {
         visibility: hidden;
         width: fit-content;
         height: 100%;
@@ -85,7 +87,7 @@ visibility: hidden;
         margin: 10px 10px 9px 10px;
         padding: 2px;
         font-family: "Rajdhani", sans-serif;
-        border-bottom: 2px solid white;
+        border-bottom: 2px solid linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
         width: 100%;
         font-weight: 300;
         border-bottom: 1px solid rgb(207, 207, 207);

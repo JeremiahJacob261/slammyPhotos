@@ -62,4 +62,17 @@
     justify-content: center;
     align-items: center;
   }
+  .landing{
+    margin: 4px;
+    padding: 8px;
+    border: 1px solid rgb(223, 221, 221);
+    background-color: rgb(252, 247, 247);
+    box-shadow: 18px 10px 0px 8px rgb(230, 220, 220);
+    border-radius: 3px;
+    margin-bottom: 10%;
+  }
+  #started:hover{
+    background-color: rgb(78, 76, 77) ;
+ }
+  
 }

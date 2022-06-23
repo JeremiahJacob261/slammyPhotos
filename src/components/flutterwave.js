@@ -1,6 +1,5 @@
 import React from 'react';
 import { useFlutterwave, closePaymentModal } from 'flutterwave-react-v3';
-import { Button } from 'react-bootstrap';
 export default function Flutterwave() {
   const config = {
     public_key: 'FLWPUBK_TEST-d9e538469fb0704f5cb73af02189bd6d-X',
