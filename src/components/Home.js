@@ -23,7 +23,7 @@ function Home () {
     <p>A Comprehensive Video Course designed by Amazing Klef to help improve your studio lighting skills and empower you to create clean & creative images.
   
   This course will take you from "Amateur" to "Beast" in the studio using simple tricks and setups.</p>
-  <div>  <motion.Button variant="dark" id="started">Get Started!</motion.Button></div>
+  <div>  <Button variant="dark" id="started">Get Started!</Button></div>
     </Col>
     <Col class="home-image-side-col" sm={4}>
     <div id="home-image-side">
