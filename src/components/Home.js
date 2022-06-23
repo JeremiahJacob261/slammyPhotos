@@ -1,18 +1,11 @@
 import React from 'react';
-import { render } from 'react-dom';
 import  Button from 'react-bootstrap/Button';
 import  {Container,Row,Col} from 'react-bootstrap';
 import './components-style/home.css'
 import {motion} from 'framer-motion'
 
-class Home extends React.Component {
-    constructor() {
-      super();
-      this.state = {
-        name: 'React'
-      };
-    }
-    render(){
+function Home () {
+    
   return(
   <motion.div class="home"
   initial={{width:0,opacity:0}}
@@ -22,7 +15,7 @@ class Home extends React.Component {
     <div class="landing">
    <Container>
    <div id="home-image-top">
-    <img id="top" src="image.png" alt="landing image"/>
+    <img id="top" src="" alt=''/>
     </div>
     <Row class="home-start">
     <Col class="home-start-text" sm={6}>
@@ -36,7 +29,7 @@ class Home extends React.Component {
     </Col>
     <Col class="home-image-side-col" sm={4}>
     <div id="home-image-side">
-    <img id="side" src="https://cdn.mos.cms.futurecdn.net/yL3oYd7H2FHDDXRXwjmbMf.jpg" alt="landing image"/>
+    <img id="side" src="https://cdn.mos.cms.futurecdn.net/yL3oYd7H2FHDDXRXwjmbMf.jpg" alt="landing"/>
     </div>
     </Col>
     </Row>
@@ -57,5 +50,5 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
   </motion.div>
   );
   }
-  }
+  
 export default Home;
