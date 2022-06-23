@@ -10,7 +10,7 @@ import Flutterwave from './components/flutterwave';
 import PaySt from './components/paystack'
 import {AnimatePresence} from 'framer-motion';
 import Academy from './components/Academy';
-
+import Contact from './components/contact';
 function App() {
   return (
     <div className="App">
@@ -24,6 +24,7 @@ function App() {
    <Route path="/learn" element={<Academy/>}/>
    <Route path="/pay" element={<Flutterwave/>}/>
    <Route path="/pays" element={<PaySt/>}/>
+   <Route path="/contact" element={<Contact/>}/>
  </Routes>
  </AnimatePresence>
  <Footer/>
