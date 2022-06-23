@@ -4,6 +4,7 @@ import { db } from "./firebase-config";
 import { collection, getDocs } from "firebase/firestore";
 import './components-style/products.css'
 import {motion} from 'framer-motion';
+
 function Products(){
     const [product, setProduct] = useState([]);
     const usersCollectionRef = collection(db, "slammy");
@@ -18,7 +19,11 @@ function Products(){
     const [proPrice, setProPrice]=useState();
   
     return (
-      <div>
+      <motion.div 
+      initial={{width:0}}
+    animate={{width:"100%"}}
+    exit={{x:window.innerWidth,transition:{duration:0.1}}}
+      >
         <div class="Products-div">
           <h1>Products</h1>
         </div>
@@ -83,7 +88,7 @@ function Products(){
             );
           })}
         </div>
-      </div>
+      </motion.div>
     );
 }
 export default Products;

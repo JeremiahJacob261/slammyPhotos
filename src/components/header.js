@@ -16,7 +16,7 @@ shopping_cart
   <div class="pages">
    <Link to="/" ><div class="tnk">Home</div></Link> 
    <Link to="product" ><div class="tnk">Products</div></Link> 
-   <Link to="Academy"><div  class="tnk">Academy</div></Link>  
+   <Link to="learn"><div  class="tnk">Academy</div></Link>  
    <Link to="Prints" ><div class="tnk">Buy Prints</div></Link> 
    <Link to="Contact" ><div class="tnk">Contact</div></Link> 
   </div>

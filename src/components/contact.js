@@ -1,9 +1,14 @@
 import React from "react";
+import {motion} from 'framer-motion';
 function Contact(){
 return(
-    <div>
+    <motion.div
+    initial={{width:0}}
+    animate={{width:"100%"}}
+    exit={{x:window.innerWidth}}
+    >
         <h2>Contact</h2>
-    </div>
+    </motion.div>
 );
 }
 export default Contact;

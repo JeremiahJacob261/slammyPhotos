@@ -8,19 +8,24 @@ import Products from './components/Products';
 import Admin from './admin/Admin';
 import Flutterwave from './components/flutterwave';
 import PaySt from './components/paystack'
+import {AnimatePresence} from 'framer-motion';
+import Academy from './components/Academy';
 
 function App() {
   return (
     <div className="App">
   <Router>
   <Header/>
+  <AnimatePresence>
  <Routes>
    <Route path="/" element={<Home/>}/>
    <Route path="/product" element={<Products/>}/>
    <Route path="/admin" element={<Admin/>}/>
+   <Route path="/learn" element={<Academy/>}/>
    <Route path="/pay" element={<Flutterwave/>}/>
    <Route path="/pays" element={<PaySt/>}/>
  </Routes>
+ </AnimatePresence>
  <Footer/>
   </Router>
     </div>
