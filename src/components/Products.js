@@ -3,7 +3,6 @@ import { Dropdown, Container, Row, Col } from "react-bootstrap";
 import { db } from "./firebase-config";
 import { collection, getDocs } from "firebase/firestore";
 import './components-style/products.css'
-import {motion} from 'framer-motion';
 
 function Products(){
     const [product, setProduct] = useState([]);
@@ -19,11 +18,7 @@ function Products(){
     const [proPrice, setProPrice]=useState();
   
     return (
-      <motion.div 
-      initial={{width:0,opacity:0}}
-    animate={{width:"100%",opacity:1}}
-    exit={{x:window.innerWidth,transition:{duration:0.1},opacity:0}}
-      >
+      <div  >
         <div class="Products-div">
           <h1>Products</h1>
         </div>
@@ -60,10 +55,7 @@ function Products(){
               <div>
                 <Container>
                   <Row class="product-catalog">
-                    <motion.div whileTap={{
-                      scale:0.8,
-
-                    }}>
+                    <div>
                     <Col class="product-catalog-col">
                       <Row>
                         <img src={pro.imageUrl} id="fire-image" alt="productImage" />
@@ -81,14 +73,14 @@ function Products(){
               }}>{pro.price}</p>
                       </Row>
                     </Col>
-                    </motion.div>
+                    </div>
                   </Row>
                 </Container>
               </div>
             );
           })}
         </div>
-      </motion.div>
+      </div>
     );
 }
 export default Products;

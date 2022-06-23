@@ -8,7 +8,6 @@ import Products from './components/Products';
 import Admin from './admin/Admin';
 import Flutterwave from './components/flutterwave';
 import PaySt from './components/paystack'
-import {AnimatePresence} from 'framer-motion';
 import Academy from './components/Academy';
 import Contact from './components/contact';
 function App() {
@@ -16,7 +15,6 @@ function App() {
     <div className="App">
   <Router>
   <Header/>
-  <AnimatePresence>
  <Routes>
    <Route path="/" element={<Home/>}/>
    <Route path="/product" element={<Products/>}/>
@@ -26,7 +24,6 @@ function App() {
    <Route path="/pays" element={<PaySt/>}/>
    <Route path="/contact" element={<Contact/>}/>
  </Routes>
- </AnimatePresence>
  <Footer/>
   </Router>
     </div>

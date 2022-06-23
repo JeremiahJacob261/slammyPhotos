@@ -2,12 +2,11 @@ import React,{useState} from "react";
 import './components-style/header.css';
 import {Link} from 'react-router-dom';
 import {Collapse} from 'react-bootstrap';
-import {motion} from 'framer-motion';
 function Header(){
     const [open, setOpen] = useState(false);
     return(
         <div>
-          <motion.div  whileInView={{ opacity: 1 }}
+          <div
           >
            <div class="mainHeader">
            <span id="icons" class="material-symbols-outlined">
@@ -36,7 +35,7 @@ search
    <Link to="Contact" ><div class="tnv">Contact</div></Link> 
         </div>
       </Collapse>
-      </motion.div>
+      </div>
         </div>
     );
 }
