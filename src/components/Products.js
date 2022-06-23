@@ -3,6 +3,7 @@ import { Dropdown, Container, Row, Col } from "react-bootstrap";
 import { db } from "./firebase-config";
 import { collection, getDocs } from "firebase/firestore";
 import './components-style/products.css'
+import {motion} from 'framer-motion';
 function Products(){
     const [product, setProduct] = useState([]);
     const usersCollectionRef = collection(db, "slammy");
@@ -54,6 +55,10 @@ function Products(){
               <div>
                 <Container>
                   <Row class="product-catalog">
+                    <motion.div whileTap={{
+                      scale:0.8,
+
+                    }}>
                     <Col class="product-catalog-col">
                       <Row>
                         <img src={pro.imageUrl} id="fire-image" alt="productImage" />
@@ -71,6 +76,7 @@ function Products(){
               }}>{pro.price}</p>
                       </Row>
                     </Col>
+                    </motion.div>
                   </Row>
                 </Container>
               </div>
