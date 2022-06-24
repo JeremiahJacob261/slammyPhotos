@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/slammyPhotos/static/css/main.370f9827.css",
+    "main.js": "/slammyPhotos/static/js/main.8a2ba633.js",
+    "static/js/787.a87eb97d.chunk.js": "/slammyPhotos/static/js/787.a87eb97d.chunk.js",
+    "index.html": "/slammyPhotos/index.html",
+    "main.370f9827.css.map": "/slammyPhotos/static/css/main.370f9827.css.map",
+    "main.8a2ba633.js.map": "/slammyPhotos/static/js/main.8a2ba633.js.map",
+    "787.a87eb97d.chunk.js.map": "/slammyPhotos/static/js/787.a87eb97d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.370f9827.css",
+    "static/js/main.8a2ba633.js"
+  ]
+}
