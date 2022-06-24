@@ -15,7 +15,7 @@ function Home () {
     <div class="landing">
    <Container>
    <div id="home-image-top">
-    <img id="top" src="" alt=''/>
+    <img id="top" src="./photos/landing.JPG" alt=''/>
     </div>
     <Row class="home-start">
     <Col class="home-start-text" sm={6}>
