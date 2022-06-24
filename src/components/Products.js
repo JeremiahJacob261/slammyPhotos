@@ -7,8 +7,9 @@ import './components-style/products.css';
 
 function Products(){
     const [product, setProduct] = useState([]);
-    const usersCollectionRef = collection(db, "slammy");
+    
     useEffect(() => {
+      const usersCollectionRef = collection(db, "slammy");
       const getUsers = async () => {
         const data = await getDocs(usersCollectionRef);
         setProduct(data.docs.map((pro) => ({ ...pro.data(), id: pro.id })));
