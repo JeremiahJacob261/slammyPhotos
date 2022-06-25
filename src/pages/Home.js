@@ -3,7 +3,8 @@ import  Button from 'react-bootstrap/Button';
 import  {Container,Row,Col} from 'react-bootstrap';
 import './style.css';
 import landing from "./photos/landing.JPG"
-import {motion} from 'framer-motion'
+import {motion} from 'framer-motion';
+import Print from './prints';
 function Home () {
     
   return(
@@ -31,7 +32,7 @@ function Home () {
     </Row>
   </Container>
   </div>
-  
+  <div><Print/></div>
   </motion.div>
   );
   }

@@ -2,12 +2,15 @@ import React,{useState} from "react";
 import './style.css';
 import {Link} from 'react-router-dom';
 import {Collapse} from 'react-bootstrap';
+import Stack from 'react-bootstrap/Stack'
+
 function Header(){
     const [open, setOpen] = useState(false);
     return(
         <div>
           <div
           >
+<Stack direction="horizontal" gap={3}>
            <div class="mainHeader">
            <span id="icons" class="material-symbols-outlined">
 shopping_cart
@@ -26,6 +29,7 @@ menu
 search
 </span>
     </div>
+    </Stack>
     <Collapse in={open}>
         <div id="example-collapse-text">
         <Link to="/" ><div class="tnv">Home</div></Link> 
