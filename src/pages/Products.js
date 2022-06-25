@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import { Dropdown, Container, Row, Col } from "react-bootstrap";
 import { db } from "./firebase-config";
 import { collection, getDocs } from "firebase/firestore";
-import './pages.css'
+import './pages.css';
+import {motion} from 'framer-motion';
 
 
 function Products(){
@@ -20,7 +21,9 @@ function Products(){
     const [proPrice, setProPrice]=useState();
   
     return (
-      <div>
+      <motion.div  initial={{width:0,opacity:0}}
+      animate={{width:"100%",opacity:1}}
+      exit={{x:window.innerWidth,transition:{duration:0.1},opacity:0}}>
         <div class="Products-div">
           <h1>Products</h1>
         </div>
@@ -80,7 +83,7 @@ function Products(){
             );
           })}
         </div>
-      </div>
+      </motion.div>
     );
 }
 export default Products;

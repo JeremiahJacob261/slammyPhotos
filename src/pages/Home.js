@@ -3,15 +3,17 @@ import  Button from 'react-bootstrap/Button';
 import  {Container,Row,Col} from 'react-bootstrap';
 import './style.css';
 import landing from "./photos/landing.JPG"
-
+import {motion} from 'framer-motion'
 function Home () {
     
   return(
-  <div>
+  <motion.div  initial={{width:0,opacity:0}}
+  animate={{width:"100%",opacity:1}}
+  exit={{x:window.innerWidth,transition:{duration:0.1},opacity:0}}>
     <div class="landing">
    <Container>
    <div id="home-image-top">
-    <img id="top" src={landing} alt=''/>
+    <motion.img id="top" src={landing} alt='picture' whileHover={{ scale: 1.1 }}/>
     </div>
     <Row class="home-start">
     <Col class="home-start-text" >
@@ -19,7 +21,7 @@ function Home () {
     <p>A Comprehensive Video Course designed by Amazing Klef to help improve your studio lighting skills and empower you to create clean & creative images.
   
   This course will take you from "Amateur" to "Beast" in the studio using simple tricks and setups.</p>
-  <div>  <Button variant="dark" id="started">Get Started!</Button></div>
+  <motion.div whileTap={{ scale: 1.1 }}>  <Button variant="dark" id="started" >Get Started!</Button></motion.div>
     </Col>
     <Col class="home-image-side-col" sm={5}>
     <div id="home-image-side">
@@ -30,7 +32,7 @@ function Home () {
   </Container>
   </div>
   
-  </div>
+  </motion.div>
   );
   }
   

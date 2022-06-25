@@ -19,6 +19,7 @@ function App() {
    <Route path="/" element={<Home/>}/>
    <Route path="/product" element={<Products/>}/>
    <Route path="/learn" element={<Academy/>}/>
+   <Route path='/contact' element={<Contact/>}/>
  </Routes>
  <Footer/>
  </AnimatePresence>
