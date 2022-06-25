@@ -23,7 +23,7 @@ function Home () {
     </Col>
     <Col class="home-image-side-col" sm={4}>
     <div id="home-image-side">
-    <img id="side" src="https://cdn.mos.cms.futurecdn.net/yL3oYd7H2FHDDXRXwjmbMf.jpg" alt="landing"/>
+    <img id="side" src={landing} alt="landing"/>
     </div>
     </Col>
     </Row>
