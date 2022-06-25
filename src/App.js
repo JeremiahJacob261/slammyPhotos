@@ -9,14 +9,14 @@ import Footer from './pages/footer';
 function App() {
   return (
     <div className="App">
+      <Header/>
   <Router>
-    <Header/>
  <Routes>
    <Route path="/" element={<Home/>}/>
    <Route path="/product" element={<Products/>}/>
  </Routes>
- <Footer/>
   </Router>
+  <Footer/>
     </div>
   );
 }
