@@ -59,21 +59,19 @@ function Products(){
                   <Row class="product-catalog">
                     <div>
                     <Col class="product-catalog-col">
-                      <Row>
+                    
                         <img src={pro.imageUrl} id="fire-image" alt="productImage" />
-                      </Row>
-                      <Row>
+                     
                         <h5  value={proTitle}
               onChange={(proTitle) => {
                 setProTitle(proTitle.target.value);
               }}>{pro.product}</h5>
-                      </Row>
-                      <Row>
+                    
                         <p  value={proPrice}
               onChange={(proPrice) => {
                 setProPrice(proPrice.target.value);
               }}>{pro.price}</p>
-                      </Row>
+                     
                     </Col>
                     </div>
                   </Row>
