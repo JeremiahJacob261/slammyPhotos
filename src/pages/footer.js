@@ -1,5 +1,5 @@
 import React from "react";
-import './pages.css'
+import './style.css'
 import {Form,Button} from 'react-bootstrap'
 function Footer(){
     return(

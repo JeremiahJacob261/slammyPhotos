@@ -1,5 +1,5 @@
 import React,{useState} from "react";
-import './pages.css';
+import './style.css';
 import {Link} from 'react-router-dom';
 import {Collapse} from 'react-bootstrap';
 function Header(){
