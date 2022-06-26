@@ -2,7 +2,7 @@ import React from 'react';
 import  Button from 'react-bootstrap/Button';
 import  {Container,Row,Col} from 'react-bootstrap';
 import './style.css';
-import landing from "./photos/landing.JPG"
+import landing from "./photos/landing.webp"
 import {motion} from 'framer-motion';
 import Print from './prints';
 function Home () {

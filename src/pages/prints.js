@@ -1,6 +1,6 @@
 import React from "react";
 import {Col,Container,Button,Stack} from 'react-bootstrap';
-import shop from "./photos/hang_over.jpg";
+import shop from "./photos/hang_over.webp";
 import './style.css';
 function Prints(){
 return(
