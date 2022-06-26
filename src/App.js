@@ -1,26 +1,29 @@
-import React from 'react';
+import React ,{lazy , Suspense}from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import {BrowserRouter as Router,Routes,Route} from 'react-router-dom';
-import Home from './pages/Home';
-import Products from './pages/Products';
-import Header from './pages/header';
-import Footer from './pages/footer';
-import Contact from './pages/contact';
-import Academy from './pages/Academy'; 
 import { AnimatePresence } from 'framer-motion';
+
+const Home = lazy(() => import('./pages/Home'));
+const Header = lazy(() => import('./pages/header'));
+const Footer = lazy(() => import('./pages/footer'));
+const Academy = lazy(() => import('./pages/Academy'));
+const Contact = lazy(() => import('./pages/contact'));
+const Products = lazy(() => import('./pages/Products'));
 function App() {
   return (
     <div className="App">
   <Router>
     <AnimatePresence>
     <Header/>
+    <Suspense fallback={<div>Loading...</div>}>
  <Routes>
    <Route path="/" element={<Home/>}/>
    <Route path="/product" element={<Products/>}/>
    <Route path="/learn" element={<Academy/>}/>
    <Route path='/contact' element={<Contact/>}/>
  </Routes>
+ </Suspense>
  <Footer/>
  </AnimatePresence>
   </Router>
