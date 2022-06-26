@@ -367,3 +367,21 @@
   padding-top: 5px;
   padding-bottom: 5px;
 }
+ #h3a, #h3b,#h3c{
+  position: absolute;
+  font-weight: bold;
+  text-align: right;
+  font-size: 30px;
+  color: beige;
+}
+#typesa ,#typesb ,#typesc{
+  position:relative;
+  text-align: center;
+  justify-items: center;
+  width: fit-content;
+  padding: 3px;
+  margin: 4px;
+}
+#typesa img ,#typesb img,#typesc img{
+width: 100%;
+}

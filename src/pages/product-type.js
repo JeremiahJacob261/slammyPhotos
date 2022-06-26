@@ -1,16 +1,28 @@
 import React from "react";
-import {Col,Row,Container,Button,Stack} from 'react-bootstrap';
-import shop from "./photos/hang_over.jpg";
+import {Col,Container,Row} from 'react-bootstrap';
+import lut1 from './photos/lut1.JPG';
+import lut2 from './photos/lut2.webp'
+import lut3 from './photos/lut3.JPG'
 import './style.css';
 function Type(){
 return(
     <div className="type">
 <Container>
-<Stack direction="horizontal" gap={3}>
-    <Col> <div id="typesa"></div></Col>
-    <Col><div  id="typesb"></div></Col>
-    <Col><div  id="typesc"></div></Col>
-        </Stack>
+<Row>
+    <Col sm={3}> <div id="typesa">
+      
+        <h3 id="h3a">hello</h3>
+        <img src={lut1} alt=""/>
+        </div> </Col>
+    <Col sm={3}><div  id="typesb">
+    <h3 id="h3b">hello</h3>
+        <img src={lut2} alt=""/>
+        </div></Col>
+    <Col sm={3}><div  id="typesc">
+    <h3 id="h3c">hello</h3>
+        <img src={lut3} alt=""/>
+        </div></Col>
+        </Row>
 </Container>
     </div>
 );

@@ -5,6 +5,7 @@ import './style.css';
 import landingsm from "./photos/landingsm.webp"
 import {motion} from 'framer-motion';
 import Print from './prints';
+import Type from './product-type';
 function Home () {
     
   return(
@@ -33,6 +34,7 @@ function Home () {
   </Container>
   </div>
   <div><Print/></div>
+  <div><Type/></div>
   </motion.div>
   );
   }

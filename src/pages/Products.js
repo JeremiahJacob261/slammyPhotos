@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Dropdown, Container, Row, Col } from "react-bootstrap";
 import { db } from "./firebase-config";
 import { collection, getDocs } from "firebase/firestore";
-import './pages.css';
+import './style.css';
 import {motion} from 'framer-motion';
 
 
