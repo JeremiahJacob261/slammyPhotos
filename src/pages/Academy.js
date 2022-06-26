@@ -1,5 +1,4 @@
 import React from "react";
-import { ModuleDetectionKind } from "typescript";
 import './style.css';
 import {motion} from 'framer-motion';
 
