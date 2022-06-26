@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkslammy_photos=self.webpackChunkslammy_photos||[]).push([[368],{5368:function(s,n,t){t.r(n);t(2791);var e=t(184);n.default=function(){return(0,e.jsx)("div",{children:(0,e.jsx)("h2",{children:"Contact"})})}}}]);
+//# sourceMappingURL=368.b6b48a85.chunk.js.map
