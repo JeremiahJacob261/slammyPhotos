@@ -27,7 +27,7 @@ function Home () {
     </Col>
     <Col class="home-image-side-col" sm={5}>
     <div id="home-image-side">
-    <img id="side" src={landing} alt="landing"  whileHover={{ scale: 1.1 }}/>
+    <img id="side" src={landingsm} alt="landing"  whileHover={{ scale: 1.1 }}/>
     </div>
     </Col>
     </Row>
