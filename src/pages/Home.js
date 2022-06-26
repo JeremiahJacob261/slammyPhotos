@@ -2,7 +2,8 @@ import React from 'react';
 import  Button from 'react-bootstrap/Button';
 import  {Container,Row,Col} from 'react-bootstrap';
 import './style.css';
-import landing from "./photos/landing.webp"
+import landing from "./photos/landing.webp";
+import landingsm from "./photos/landingsm.webp"
 import {motion} from 'framer-motion';
 import Print from './prints';
 function Home () {
@@ -14,7 +15,7 @@ function Home () {
     <div class="landing">
    <Container>
    <div id="home-image-top">
-    <motion.img id="top" src={landing} alt='picture'/>
+    <motion.img id="top" src={landingsm} alt='picture'/>
     </div>
     <Row class="home-start">
     <Col class="home-start-text" >
