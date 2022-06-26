@@ -14,7 +14,7 @@ function Home () {
     <div class="landing">
    <Container>
    <div id="home-image-top">
-    <motion.img id="top" src={landing} alt='picture' whileHover={{ scale: 1.1 }}/>
+    <motion.img id="top" src={landing} alt='picture'/>
     </div>
     <Row class="home-start">
     <Col class="home-start-text" >
@@ -26,7 +26,7 @@ function Home () {
     </Col>
     <Col class="home-image-side-col" sm={5}>
     <div id="home-image-side">
-    <img id="side" src={landing} alt="landing"/>
+    <img id="side" src={landing} alt="landing"  whileHover={{ scale: 1.1 }}/>
     </div>
     </Col>
     </Row>

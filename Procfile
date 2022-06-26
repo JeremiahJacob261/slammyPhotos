@@ -1,2 +1,2 @@
 web: yarn start
-heroku config:set WEB_MEMORY=1024
+heroku config:set WEB_MEMORY=2048
