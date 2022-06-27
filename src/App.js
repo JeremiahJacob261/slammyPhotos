@@ -11,6 +11,7 @@ const Footer = lazy(() => import('./pages/footer'));
 const Academy = lazy(() => import('./pages/Academy'));
 const Contact = lazy(() => import('./pages/contact'));
 const Products = lazy(() => import('./pages/Products'));
+
 function App() {
   return (
     <div className="App">

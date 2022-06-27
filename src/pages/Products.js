@@ -4,7 +4,7 @@ import { db } from "./firebase-config";
 import { collection, getDocs } from "firebase/firestore";
 import './style.css';
 import {motion} from 'framer-motion';
-
+import Action from './floating_action'
 
 function Products(){
     const [product, setProduct] = useState([]);
@@ -83,6 +83,7 @@ function Products(){
             );
           })}
         </div>
+       <Action/>
       </motion.div>
     );
 }

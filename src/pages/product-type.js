@@ -7,7 +7,7 @@ import './style.css';
 function Type(){
 return(
     <div className="type">
-<Container>
+<Container fluid="md">
 <Row className="types">
 <Stack direction="horizontal" gap={3}>
     <Col sm={4}><div  id="typesb">
