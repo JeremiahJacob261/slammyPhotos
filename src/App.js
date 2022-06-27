@@ -4,6 +4,7 @@ import './App.css';
 import './pages/style.css';
 import {BrowserRouter as Router,Routes,Route} from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
+import Action from './pages/floating_action';
 
 const Home = lazy(() => import('./pages/Home'));
 const Header = lazy(() => import('./pages/header'));
@@ -18,6 +19,7 @@ function App() {
   <Router>
     <AnimatePresence>
     <Header/>
+    <Action/>
     <Suspense fallback={<div>Loading...</div>}>
  <Routes>
    <Route path="/" element={<Home/>}/>
