@@ -1,18 +1,26 @@
 import React from "react";
+import Box from '@mui/material/Box';
 import Fab from '@mui/material/Fab';
-import './style.css';
-import { DropdownButton } from "react-bootstrap";
-import DropdownItem from "react-bootstrap/esm/DropdownItem";
+import AddIcon from '@mui/icons-material/Add';
+import EditIcon from '@mui/icons-material/Edit';
+import FavoriteIcon from '@mui/icons-material/Favorite';
+import NavigationIcon from '@mui/icons-material/Navigation';
 export default function Action(){
 return(
-    <>
-     <DropdownButton drop="up" variant="secondary">
-<DropdownItem>hojh</DropdownItem>
-<DropdownItem>bomn</DropdownItem>
-    </DropdownButton>
-    <Fab variant="primary" color="dark" aria-label="go">
-   setProduct
-    </Fab>
-    </>
+    <Box sx={{ '& > :not(style)': { m: 1 } }}>
+      <Fab color="primary" aria-label="add">
+        <AddIcon />
+      </Fab>
+      <Fab color="secondary" aria-label="edit">
+        <EditIcon />
+      </Fab>
+      <Fab variant="extended">
+        <NavigationIcon sx={{ mr: 1 }} />
+        Navigate
+      </Fab>
+      <Fab disabled aria-label="like">
+        <FavoriteIcon />
+      </Fab>
+    </Box>
 );
 }
