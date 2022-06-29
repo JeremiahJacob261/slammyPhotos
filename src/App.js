@@ -4,7 +4,7 @@ import './App.css';
 import './pages/style.css';
 import {BrowserRouter as Router,Routes,Route} from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
-import Action from './pages/floating_action';
+
 
 const Home = lazy(() => import('./pages/Home'));
 const Header = lazy(() => import('./pages/header'));
@@ -26,7 +26,7 @@ function App() {
    <Route path="/product" element={<Products/>}/>
    <Route path="/learn" element={<Academy/>}/>
    <Route path='/contact' element={<Contact/>}/>
-   <Route path='/float' element={<Action/>}/>
+   
  </Routes>
  </Suspense>
  <Footer/>

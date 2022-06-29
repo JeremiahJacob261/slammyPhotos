@@ -439,3 +439,8 @@
   padding-top: 5px;
   padding-bottom: 5px;
 }
+.currency_change{
+  position: fixed;
+  top:75%;
+  left: 10%;
+}

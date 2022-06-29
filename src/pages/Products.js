@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect} from "react";
 import { Dropdown, Container, Row, Col } from "react-bootstrap";
 import { db } from "./firebase-config";
 import { collection, getDocs } from "firebase/firestore";
 import './style.css';
 import {motion} from 'framer-motion';
-
+import Action from "./floating_action";
 
 function Products(){
     const [product, setProduct] = useState([]);
@@ -83,7 +83,7 @@ function Products(){
             );
           })}
         </div>
-      
+      <Action/>
       </motion.div>
     );
 }
