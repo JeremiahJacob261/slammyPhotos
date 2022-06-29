@@ -19,13 +19,14 @@ function App() {
   <Router>
     <AnimatePresence>
     <Header/>
-    <Action/>
+   
     <Suspense fallback={<div>Loading...</div>}>
  <Routes>
    <Route path="/" element={<Home/>}/>
    <Route path="/product" element={<Products/>}/>
    <Route path="/learn" element={<Academy/>}/>
    <Route path='/contact' element={<Contact/>}/>
+   <Route path='/float' element={<Action/>}/>
  </Routes>
  </Suspense>
  <Footer/>
