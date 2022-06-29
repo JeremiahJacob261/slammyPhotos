@@ -13,6 +13,7 @@ return(
          return(
            
       <Dropdown.Item>
+         <img src={flag.flag_base64} id="flag" alt=""/>
          <i>{flag.country}</i>
       </Dropdown.Item>
      

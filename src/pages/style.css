@@ -459,3 +459,8 @@ align-items: center;
   height: 300px;   
 overflow-y : scroll;
 }
+#flag{
+  width: 30px;
+  height: 30px;
+  margin-right: 2px;
+}
