@@ -1,6 +1,5 @@
 import React from 'react';
-import  Button from 'react-bootstrap/Button';
-import  {Container,Row,Col} from 'react-bootstrap';
+import  {Container,Row,Col,Button} from 'react-bootstrap';
 import './style.css';
 import landingsm from "./photos/landingsm.webp"
 import {motion} from 'framer-motion';
