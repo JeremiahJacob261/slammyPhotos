@@ -450,11 +450,7 @@
   padding: 2px;
   margin: 5px;
 }
-.new{
-padding: 2px;
-justify-content: center;
-align-items: center;
-}
+
 .drop_currency{
   height: 300px;   
 overflow-y : scroll;
@@ -463,4 +459,18 @@ overflow-y : scroll;
   width: 30px;
   height: 30px;
   margin-right: 2px;
+}
+.drop_currency::-webkit-scrollbar {
+  width: 8px;
+  background-color: aquamarine;
+}
+.drop_currency::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  width: 80px;
+}
+.drop_currency::-webkit-scrollbar-thumb {
+  background: rgb(56, 109, 224);
+}
+.drop_currency::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
