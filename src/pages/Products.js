@@ -19,7 +19,7 @@ function Products(){
     }, []);
     const [proTitle, setProTitle]=useState();
     const [proPrice, setProPrice]=useState();
-  
+ 
     return (
       <motion.div  initial={{width:0,opacity:0}}
       animate={{width:"100%",opacity:1}}
@@ -54,14 +54,15 @@ function Products(){
           </Dropdown>
         </div>
         <div>
+        <div>
+                <Container>
+                  <Row class="product-catalog">
           {product.map((pro) => {
            
             return (
-              <div>
-                <Container>
-                  <Row class="product-catalog">
-                    <div>
-                    <Col class="product-catalog-col">
+             
+                   
+                    <Col class="product-catalog-col" size="md">
                     
                         <img src={pro.imageUrl} id="fire-image" alt="productImage" />
                      
@@ -76,12 +77,13 @@ function Products(){
               }}>{pro.price}</p>
                      
                     </Col>
-                    </div>
-                  </Row>
-                </Container>
-              </div>
+                  
+                
             );
           })}
+          </Row>
+                </Container>
+              </div>
         </div>
       <Action/>
       </motion.div>

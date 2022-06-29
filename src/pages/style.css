@@ -356,9 +356,6 @@
   .home-start-text {
     flex: 1;
   }
-  #subscribe {
-    margin-left: 5px;
-  }
   .Products-div {
     display: flex;
     justify-content: center;
@@ -442,5 +439,23 @@
 .currency_change{
   position: fixed;
   top:75%;
-  left: 10%;
+  left: 8%;
+}
+.social{
+  position: absolute;
+  left: 70%;
+  width: max-content;
+}
+#social-icon{
+  padding: 2px;
+  margin: 5px;
+}
+.new{
+padding: 2px;
+justify-content: center;
+align-items: center;
+}
+.drop_currency{
+  height: 300px;   
+overflow-y : scroll;
 }
