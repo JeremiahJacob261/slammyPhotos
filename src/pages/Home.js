@@ -6,6 +6,7 @@ import {motion} from 'framer-motion';
 //lazy loading...
 const Print = React.lazy(() => import('./prints'));
 const Type = React.lazy(() => import('./product-type'));
+const Products = React.lazy(() => import('./Products'));
 function Home () {
     
   return(
@@ -33,6 +34,7 @@ function Home () {
     </Row>
   </Container>
   </div>
+  <><Products/></>
   <div><Print/></div>
   <div><Type/></div>
   </motion.div>
