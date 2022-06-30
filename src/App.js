@@ -14,6 +14,18 @@ const Contact = lazy(() => import('./pages/contact'));
 const Products = lazy(() => import('./pages/Products'));
 
 function App() {
+  if(navigator.geolocation){
+//get userlocation for currency
+navigator.geolocation.getCurrentPosition(onSuccess, onError);
+  }else{
+    alert("your browser does not support location")
+  }
+  function onSuccess(position){
+    console.log(position)
+  }
+  function onError(error){
+     console.log(error);
+  }
   return (
     <div className="App">
   <Router>

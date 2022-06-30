@@ -2,13 +2,12 @@ import React from "react";
 import "./style.css";
 import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
 import {flas} from './json/country-by-flag';
-import {currency_code} from './json/currency';
 import {Button,Dropdown,DropdownButton} from 'react-bootstrap'
  function Action(){
  
 return(
    <div>
-      <Button variant="dark" className="currency_change"><AttachMoneyIcon/>
+      <Button variant="secondary" className="currency_change"><AttachMoneyIcon/>
       <DropdownButton drop="up" ><div className="drop_currency">
         {flas.map((flag) => {
          

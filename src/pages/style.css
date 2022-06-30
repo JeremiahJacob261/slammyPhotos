@@ -474,3 +474,7 @@ overflow-y : scroll;
 .drop_currency::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+.currency_change{
+  width: 65px;
+  box-shadow:3px 3px 5px 5px solid #f1f1f1;
+}
