@@ -24,15 +24,13 @@ function App() {
    <Route path="/product" element={<Products/>}/>
    <Route path="/learn" element={<Academy/>}/>
    <Route path='/contact' element={<Contact/>}/>
-   
- </Routes>
+    </Routes>
  </Suspense>
  <Footer/>
  </AnimatePresence>
+ <Action/>
   </Router>
-  
-    </div>
+  </div>
   );
 }
 export default App;
-<Action/>

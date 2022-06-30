@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState} from "react";
 import "./style.css";
 import {flas} from './json/country-by-flag';
-import {Button,Dropdown,DropdownButton} from 'react-bootstrap'
+import {Button,Dropdown,DropdownButton} from 'react-bootstrap';
  function Action(){
-   if(navigator.geolocation){
+   const [responseData,setResponseData] =useState('');
+ if(navigator.geolocation){
       //get userlocation for currency
       navigator.geolocation.getCurrentPosition(onSuccess, onError);
         }else{
@@ -15,30 +16,32 @@ import {Button,Dropdown,DropdownButton} from 'react-bootstrap'
           .then(response => response.json()).then(result => {
             let all = result.results[0].components;
             const userlocations = all.country;
-            
-          })
-          return(
-            <div>
-               <Button variant="secondary" className="currency_change"><i></i>
-               <DropdownButton drop="up" ><div className="drop_currency">
-                 {flas.map((flag) => {
-                  
-                  return(
-                    
-               <Dropdown.Item>
-                  <img src={flag.flag_base64} id="flag" alt=""/>
-                  <i>{flag.country}</i>  <i>{flag.currency_code}</i>
-               </Dropdown.Item>
-              
-                  );
-                 })}</div>
-               </DropdownButton>
-               </Button>
-            </div>
-         );
-        }
+            setResponseData(userlocations);
+            console.log(userlocations);
+             })
+          }
         function onError(error){
            console.log(error);
         }
+        return(
+          <div>
+             <Button variant="secondary" className="currency_change">
+               <i className="loc">{responseData}</i>
+             <DropdownButton drop="up" ><div className="drop_currency">
+               {flas.map((flag) => {
+                
+                return(
+                  
+             <Dropdown.Item>
+                <img src={flag.flag_base64} id="flag" alt=""/>
+                <i>{flag.country}</i>  <i>{flag.currency_code}</i>
+             </Dropdown.Item>
+            
+                );
+               })}</div>
+             </DropdownButton>
+             </Button>
+          </div>
+       );
 }
 export default Action;

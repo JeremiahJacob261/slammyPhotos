@@ -29,7 +29,7 @@
     flex: 4;
   }
   .landing{
-    margin-top: 5%;
+    margin-top: 2%;
     justify-items: center;
     justify-self: center;
     align-self: center;
@@ -76,7 +76,7 @@
   .footer {
     width: 100%;
     padding: 2px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(235, 232, 232);
     display: flex;
     flex-direction: column;
     height: fit-content;
@@ -85,14 +85,14 @@
     margin-top: 5px;
   }
   .corporates {
-    background-color: rgb(252, 249, 249);
+    background-color: rgb(235, 232, 232);
     width: fit-content;
     height: fit-content;
     flex: 1;
     justify-items: center;
   }
   .footer .newsletter {
-    background-color: white;
+    background-color: rgb(235, 232, 232);
     width: 100%;
     flex: 1;
     display: inline-flex;
@@ -388,6 +388,8 @@
     display: -webkit-inline-flex;
     justify-content: center;
     align-items: center;
+    margin-left: 15%;
+    margin-right: 15%;
   }
   #typesa img ,#typesb img,#typesc img{
   width: 100%;
@@ -400,9 +402,6 @@
   .types{
     display: flexbox;
     width: 100%;
-  }
-  #typesa{
-    min-width: 148px;
   }
 }/*end of media queries*/
 .product-catalog {
@@ -475,6 +474,6 @@ overflow-y : scroll;
   background: #555;
 }
 .currency_change{
-  width: 65px;
+  width: auto;
   box-shadow:3px 3px 5px 5px solid #f1f1f1;
 }
