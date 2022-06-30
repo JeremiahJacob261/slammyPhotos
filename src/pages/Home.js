@@ -3,8 +3,9 @@ import  {Container,Row,Col,Button} from 'react-bootstrap';
 import './style.css';
 import landingsm from "./photos/landingsm.webp"
 import {motion} from 'framer-motion';
-import Print from './prints';
-import Type from './product-type';
+//lazy loading...
+const Print = React.lazy(() => import('./prints'));
+const Type = React.lazy(() => import('./product-type'));
 function Home () {
     
   return(

@@ -4,28 +4,15 @@ import './App.css';
 import './pages/style.css';
 import {BrowserRouter as Router,Routes,Route} from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
-import Action from "./pages/floating_action";
-
+//lazy imports
 const Home = lazy(() => import('./pages/Home'));
 const Header = lazy(() => import('./pages/header'));
 const Footer = lazy(() => import('./pages/footer'));
 const Academy = lazy(() => import('./pages/Academy'));
 const Contact = lazy(() => import('./pages/contact'));
 const Products = lazy(() => import('./pages/Products'));
-
+const Action = React.lazy(() => import('./pages/floating_action'));
 function App() {
-  if(navigator.geolocation){
-//get userlocation for currency
-navigator.geolocation.getCurrentPosition(onSuccess, onError);
-  }else{
-    alert("your browser does not support location")
-  }
-  function onSuccess(position){
-    console.log(position)
-  }
-  function onError(error){
-     console.log(error);
-  }
   return (
     <div className="App">
   <Router>
@@ -41,12 +28,11 @@ navigator.geolocation.getCurrentPosition(onSuccess, onError);
  </Routes>
  </Suspense>
  <Footer/>
- <Action/>
  </AnimatePresence>
   </Router>
   
     </div>
   );
 }
-
 export default App;
+<Action/>
