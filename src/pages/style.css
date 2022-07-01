@@ -376,7 +376,7 @@
     font-weight: bold;
     font-size: 30px;
     color: beige;
-    float: right;
+    float: right; 
     width: 100%;
     justify-self: center;
     vertical-align: middle;
@@ -442,9 +442,12 @@
   padding: 2px;
 }
 .print{
-  background-color: rgb(235, 207, 230);
+  background-color: rgb(253, 245, 231);
   padding-top: 5px;
   padding-bottom: 5px;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
 }
 .currency_change{
   position: fixed;

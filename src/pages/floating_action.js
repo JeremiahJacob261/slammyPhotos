@@ -1,6 +1,7 @@
 import React, { useState} from "react";
 import "./style.css";
 import {flas} from './json/country-by-flag';
+import {motion} from "framer-motion";
 import {Button,Dropdown,DropdownButton} from 'react-bootstrap';
  function Action(){
    const [responseData,setResponseData] =useState('');
@@ -24,7 +25,8 @@ import {Button,Dropdown,DropdownButton} from 'react-bootstrap';
            console.log(error);
         }
         return(
-          <div>
+          <motion.div  initial={{width:0,opacity:0}}
+          animate={{width:"100%",opacity:1}}>
              <Button variant="secondary" className="currency_change">
                <i className="loc">{responseData}</i>
              <DropdownButton drop="up" ><div className="drop_currency">
@@ -41,7 +43,7 @@ import {Button,Dropdown,DropdownButton} from 'react-bootstrap';
                })}</div>
              </DropdownButton>
              </Button>
-          </div>
+          </motion.div>
        );
 }
 export default Action;
