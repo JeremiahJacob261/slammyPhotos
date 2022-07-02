@@ -1,7 +1,7 @@
 import React from 'react';
 import  {Container,Row,Col,Button} from 'react-bootstrap';
 import './style.css';
-import landingsm from "./photos/landingsm.webp"
+import landingsm from "./photos/IMG_2343.JPG"
 import {motion} from 'framer-motion';
 //lazy loading...
 const Print = React.lazy(() => import('./prints'));

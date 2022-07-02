@@ -18,7 +18,7 @@ shopping_cart
   <div class="pages">
    <Link to="/" ><div class="tnk">Home</div></Link> 
    <Link to="product" ><div class="tnk">Products</div></Link> 
-   <Link to="learn"><div  class="tnk">Academy</div></Link>  
+   <Link to="gallery"><div  class="tnk">Gallery</div></Link>  
    <Link to="Prints" ><div class="tnk">Buy Prints</div></Link> 
    <Link to="Contact" ><div class="tnk">Contact</div></Link> 
   </div>
@@ -34,7 +34,7 @@ search
         <div id="example-collapse-text">
         <Link to="/" ><div class="tnv">Home</div></Link> 
    <Link to="product" ><div class="tnv">Products</div></Link> 
-   <Link to="Academy"><div  class="tnv">Academy</div></Link>  
+   <Link to="gallery"><div  class="tnv">Academy</div></Link>  
    <Link to="Prints" ><div class="tnv">Buy Prints</div></Link> 
    <Link to="Contact" ><div class="tnv">Contact</div></Link> 
         </div>

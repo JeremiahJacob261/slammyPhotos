@@ -498,3 +498,10 @@ overflow-y : scroll;
   margin: auto;
   padding: 4%;
 }
+.gall{
+  max-width: fit-content;
+  max-height: 200px;
+}
+.gall-cover{
+  display: inline-block;
+}

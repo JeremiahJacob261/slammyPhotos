@@ -7,7 +7,7 @@ function Admin(){
    return(
     <div>
       <h2>Admin DashBoard</h2>
-      <Stack direction="horizontal">
+      <Stack direction="vertical">
   <div>
   <Selector/>
    </div>
