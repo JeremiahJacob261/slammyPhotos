@@ -31,9 +31,7 @@ import {Button,Dropdown,DropdownButton} from 'react-bootstrap';
                <i className="loc">{responseData}</i>
              <DropdownButton drop="up" ><div className="drop_currency">
                {flas.map((flag) => {
-                
                 return(
-                  
              <Dropdown.Item>
                 <img src={flag.flag_base64} id="flag" alt=""/>
                 <i>{flag.country}</i>  <i>{flag.currency_code}</i>

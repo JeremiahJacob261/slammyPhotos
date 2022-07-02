@@ -504,4 +504,5 @@ overflow-y : scroll;
 }
 .gall-cover{
   display: inline-block;
+  margin: 1%;
 }

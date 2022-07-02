@@ -5,10 +5,9 @@ import { collection, getDocs } from "firebase/firestore";
 import './style.css';
 import {motion} from 'framer-motion';
 
-export function Products(){
+function Products(){
     const [product, setProduct] = useState([]);
-    const [proTitle, setProTitle]=useState('');
-    const [proPrice, setProPrice]=useState('');
+    
     useEffect(() => {
       const usersCollectionRef = collection(db, "slammy");
       const getUsers = async () => {
@@ -27,8 +26,7 @@ export function Products(){
                 <h1>Products</h1>
                   <Row class="product-catalog">
           {product.map((pro) => {
-            setProTitle(pro.product);
-            setProPrice(pro.price);
+            ;
             return (
              <Col class="product-catalog-col" size="md" md={4}>
                   <img src={pro.imageUrl} id="fire-image" alt="productImage" />
