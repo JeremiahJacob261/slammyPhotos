@@ -500,9 +500,27 @@ overflow-y : scroll;
 }
 .gall{
   max-width: fit-content;
-  max-height: 200px;
+  max-height: 185px;
+  margin: auto;
 }
 .gall-cover{
   display: inline-block;
-  margin: 1%;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5%;
+}
+.select-control{
+  justify-content: center;
+  align-items: center;
+  padding: auto;
+  margin: auto;
+}
+.selectro{
+justify-content: center;
+align-items: center;
+}
+.sendEmail{
+  justify-self: center;
+  align-self: center;
+  margin-left: 40%;
 }

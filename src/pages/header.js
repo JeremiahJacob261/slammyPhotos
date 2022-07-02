@@ -34,7 +34,7 @@ search
         <div id="example-collapse-text">
         <Link to="/" ><div class="tnv">Home</div></Link> 
    <Link to="product" ><div class="tnv">Products</div></Link> 
-   <Link to="gallery"><div  class="tnv">Academy</div></Link>  
+   <Link to="gallery"><div  class="tnv">Gallery</div></Link>  
    <Link to="Prints" ><div class="tnv">Buy Prints</div></Link> 
    <Link to="Contact" ><div class="tnv">Contact</div></Link> 
         </div>
