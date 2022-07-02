@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkslammy_photos=self.webpackChunkslammy_photos||[]).push([[507],{2507:function(n,s,e){e.r(s);e(2791);var h=e(184);s.default=function(){return(0,h.jsx)("div",{children:(0,h.jsx)("h2",{children:"login admin"})})}}}]);
+//# sourceMappingURL=507.49672acc.chunk.js.map
