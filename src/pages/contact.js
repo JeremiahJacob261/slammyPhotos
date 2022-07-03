@@ -60,13 +60,12 @@ return(
     </Form.Text>
     </Form.Group>
     <Form.Group className="mb-3" controlId="subscribeInput">
-    <Form.Label>Describe your compliant</Form.Label>as="textarea" placeholder="Description" rows={5} name="message"
+    <Form.Label>Describe your compliant</Form.Label>
     <FloatingLabel
     controlId="floatingInput"
     label="Description"
     className="mb-3"
-  >
-    <Form.Control  />
+  ><Form.Control as="textarea" placeholder="Description" rows={5} name="message"/>
     </FloatingLabel>
     </Form.Group>
     <Button type="submit" variant="dark">Submit</Button>
