@@ -4,7 +4,7 @@ import React from "react";
 function Edit(){
 return(
     <div>
-        <h3>
+        <h3 className="page-title">
             Edit me
         </h3>
       

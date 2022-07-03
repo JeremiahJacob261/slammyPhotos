@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { db, storage } from "../pages/firebase-config";
-import { Form, Button, Alert } from "react-bootstrap";
+import { Form, Button, Alert,Stack} from "react-bootstrap";
 import { collection, addDoc } from "firebase/firestore";
 import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
 import { v4 } from "uuid";
@@ -8,6 +8,7 @@ import '../pages/style.css';
 function Add(){
     const [product, setProduct] = useState();
   const [price, setPrice] = useState();
+  const [desc, setDesc] = useState();
   const [imageUpload, setImageUpload] = useState(null);
   const Lick = async () => {
     if (imageUpload == null) return;
@@ -31,8 +32,9 @@ function Add(){
   };
   return (
     <div>
-      <h2>Add Products</h2>
+      <h3 className="page-title">Add Products</h3 >
       <Form class="product-info">
+        <Stack direction="vertical" gap={3}>
         <input
         id="drop-image"
           type="file"
@@ -60,9 +62,19 @@ function Add(){
             placeholder="price in dollars"
           />
         </Form.Group>
+        <Form.Group className="mb-3" controlId="price">
+          <Form.Control
+           as="textarea" placeholder="Description" rows={10} name="message"
+            value={desc}
+            onChange={(desc) => {
+              setDesc(desc.target.value);
+            }}
+            />
+        </Form.Group>
         <Button variant="secondary" onClick={Lick}>
           Add Product
         </Button>
+        </Stack>
       </Form>
     </div>
   );

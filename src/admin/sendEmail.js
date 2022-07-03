@@ -1,10 +1,21 @@
-import React from "react";
+import React,{useState,useEffect} from "react";
 import '../pages/style.css';
 import {Form,Button,Stack,FloatingLabel} from "react-bootstrap";
+import { db } from "../pages/firebase-config";
+import { collection, getDocs } from "firebase/firestore";
 export default function SendEmail(){
+  const [emails ,setEmails] = useState();
+  useEffect(() => {
+    const usersCollectionRef = collection(db, "subscribe");
+    const getUsers = async () => {
+      const data = await getDocs(usersCollectionRef);
+      setEmails(data.docs.map((pro) => ({ ...pro.data(), id: pro.id })));
+    };
+    getUsers();
+  }, []);
     return(
-        <div>
-        <h2>email sender</h2>
+        <div className="sendEmailCover">
+        <h3 className="page-title">email sender</h3>
         <Form className="sendEmail">
             <Stack direction="vertical" gap={1}>
     <Form.Group className="mb-3" controlId="subscribeInput">

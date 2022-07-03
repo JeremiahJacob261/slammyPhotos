@@ -5,9 +5,19 @@ import '../pages/style.css';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip'
 function Selector(){
-   const renderTooltip = (props) => (
+   const renderTooltipa = (props) => (
       <Tooltip id="button-tooltip" {...props}>
         ADD Product
+      </Tooltip>
+    );
+    const renderTooltipb = (props) => (
+      <Tooltip id="button-tooltip" {...props}>
+        Send Email
+      </Tooltip>
+    );
+    const renderTooltipc = (props) => (
+      <Tooltip id="button-tooltip" {...props}>
+        Edit Products
       </Tooltip>
     );
  return(
@@ -17,20 +27,26 @@ function Selector(){
    <OverlayTrigger
     placement="right"
     delay={{ show: 250, hide: 400 }}
-    overlay={renderTooltip}
-  >
-
+    overlay={renderTooltipa}>
       <Button className="select-control" variant="dark-outline"><span class="material-symbols-outlined">
 add_circle
 </span></Button>
 </OverlayTrigger>
 </Link> 
-   <Link to="sendemail"><Button className="select-control" variant="dark-outline"><span class="material-symbols-outlined">
+   <Link to="sendemail">
+   <OverlayTrigger
+    placement="right"
+    delay={{ show: 250, hide: 400 }}
+    overlay={renderTooltipb}>
+      <Button className="select-control" variant="dark-outline"><span class="material-symbols-outlined">
 outgoing_mail
-</span></Button></Link>
-   <Link to="edit"><Button className="select-control" variant="dark-outline"><span class="material-symbols-outlined">
+</span></Button></OverlayTrigger></Link>
+   <Link to="edit">  <OverlayTrigger
+    placement="right"
+    delay={{ show: 250, hide: 400 }}
+    overlay={renderTooltipc}><Button className="select-control" variant="dark-outline"><span class="material-symbols-outlined">
 change_circle
-</span></Button></Link>
+</span></Button></OverlayTrigger></Link>
     </Stack>
     </div>
  );
