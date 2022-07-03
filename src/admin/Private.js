@@ -1,8 +1,8 @@
 import { Navigate, Outlet } from 'react-router-dom'
-const AdminLogin = () => {
-  let auth = {'token':true};
+const Private = () => {
+  let auth = {'token':false}
 return (
     auth.token ? <Outlet/> : <Navigate to='/login'/>
   )
 }
-export default AdminLogin;
+export default Private;
