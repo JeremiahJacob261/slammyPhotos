@@ -1,9 +1,14 @@
-import React from "react"
+import React,{useState} from "react";
+import {Link} from 'react-router-dom'
 function AdminLogin(){
+    const [isAuth,setIsAuth] = useState("me");
 return(
-    <div>
-        <h2>login admin</h2>
-    </div>
+    <>
+   <Link to="/admin"> <button onClick={()=>{
+setIsAuth("nome")
+    }}>login</button>
+    </Link>
+    </>
 );
 }
 export default AdminLogin;

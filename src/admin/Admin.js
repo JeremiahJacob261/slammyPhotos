@@ -4,6 +4,7 @@ import {Outlet} from 'react-router-dom';
 import {Stack} from 'react-bootstrap';
 const Selector = lazy(() => import('./selector'));
 function Admin(){
+  
    return(
     <div>
       <h2>Admin DashBoard</h2>

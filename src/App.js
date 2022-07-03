@@ -1,4 +1,4 @@
-import React ,{lazy , Suspense}from 'react';
+import React ,{lazy , Suspense, useState}from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import './pages/style.css';
@@ -19,6 +19,7 @@ const Edit = lazy(() => import('./admin/edit_products'));
 const Add = lazy(() => import('./admin/addproduct'));
 const AdminLogin = lazy(() => import('./admin/admin_login'));
 function App() {
+
   return (
     <div className="App">
   <Router>
@@ -30,9 +31,10 @@ function App() {
    <Route path="product" element={<Products/>}/>
    <Route path="gallery" element={<Academy/>}/>
    <Route path='contact' element={<Contact/>}/>
+   <Route path='login' element={<AdminLogin/>}/>
    <Route path='admin' element={<Admin/>}>
    <Route path='sendemail' element={<SendEmail/>}/>
-   <Route path='add' element={<Add/>}/>
+   <Route path='/admin' element={<Add/>}/>
    <Route path='login' element={<AdminLogin/>}/>
    <Route path='edit' element={<Edit/>}/>
    </Route>

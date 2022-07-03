@@ -23,7 +23,7 @@ function Selector(){
  return(
     <div>
     <Stack direction="horizontal" gap={3} className="selectro">
-   <Link to="add">
+   <Link to="/admin">
    <OverlayTrigger
     placement="right"
     delay={{ show: 250, hide: 400 }}
