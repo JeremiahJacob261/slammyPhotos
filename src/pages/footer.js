@@ -1,6 +1,6 @@
 import React,{useState} from "react";
 import './style.css'
-import {Button,InputGroup,FormControl,Stack} from 'react-bootstrap';
+import {Button,InputGroup,FormControl,Stack,Form} from 'react-bootstrap';
 import { collection, addDoc } from "firebase/firestore";
 import { db } from "./firebase-config";
 import TwitterIcon from '@mui/icons-material/Twitter';
@@ -31,9 +31,10 @@ function Footer(){
       }}
     />
     <Button variant="dark" id="button-addon2" onClick={sub}>
-      Button
+      Subscribe
     </Button>
   </InputGroup>
+  <Form.Text className="basic-addon2">Input your Email to Subscribe for our continuos message</Form.Text>
   </Stack>
         </div>
         <div class="corporates">Home

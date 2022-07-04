@@ -10,7 +10,7 @@ function Header(){
         <div>
           <div
           >
-<Stack direction="horizontal" gap={3}>
+<Stack direction="horizontal" gap={2}>
            <div class="mainHeader">
            <span id="icons" class="material-symbols-outlined">
 shopping_cart
@@ -28,6 +28,9 @@ menu
 <span id="icons" class="material-symbols-outlined">
 search
 </span>
+<Link to="cart"><span class="material-symbols-outlined">
+shopping_bag
+</span></Link>
     </div>
     </Stack>
     <Collapse in={open}>
