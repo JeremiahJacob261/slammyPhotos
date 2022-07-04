@@ -25,9 +25,9 @@ const Cart = lazy(() => import('./pages/cart'));
 function App() {
  const [items,setItems] = useState([
   {
-  "title":"born to wiin",
-  "image":" ",
-  "desc":" ",
+  "title":null,
+  "image":null,
+  "desc":null,
   "price":0
   }
  ]);

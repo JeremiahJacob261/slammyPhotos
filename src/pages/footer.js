@@ -5,6 +5,7 @@ import { collection, addDoc } from "firebase/firestore";
 import { db } from "./firebase-config";
 import TwitterIcon from '@mui/icons-material/Twitter';
 import YouTubeIcon from '@mui/icons-material/YouTube';
+import Logo from './photos/favicon.jpg'
 import InstagramIcon from '@mui/icons-material/Instagram';
 function Footer(){
   const [emails ,setEmails] = useState();
@@ -37,12 +38,13 @@ function Footer(){
   <Form.Text className="basic-addon2">Input your Email to Subscribe for our continuos message</Form.Text>
   </Stack>
         </div>
-        <div class="corporates">Home
+        <div class="corporates"> <i className="page-title" style={{fontSize:"15"}}>@Slammy PhotoGraphe ,2022</i>
+       
         <div className="social">
           <TwitterIcon id="social-icon"/>
           <YouTubeIcon id="social-icon"/>
           <InstagramIcon id="social-icon"/>
-        </div>
+          </div>
         </div>
           </div>
     );

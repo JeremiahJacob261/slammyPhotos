@@ -3,6 +3,7 @@ import './style.css';
 import {Link} from 'react-router-dom';
 import {Collapse} from 'react-bootstrap';
 import Stack from 'react-bootstrap/Stack'
+import Logo from './photos/favicon.jpg'
 
 function Header(){
     const [open, setOpen] = useState(false);
@@ -12,14 +13,12 @@ function Header(){
           >
 <Stack direction="horizontal" gap={2}>
            <div class="mainHeader">
-           <span id="icons" class="material-symbols-outlined">
-shopping_cart
-</span>   
+          <img src={Logo} id="logo" alt="logo"/> 
   <div class="pages">
    <Link to="/" ><div class="tnk">Home</div></Link> 
    <Link to="product" ><div class="tnk">Products</div></Link> 
    <Link to="gallery"><div  class="tnk">Gallery</div></Link>  
-   <Link to="Prints" ><div class="tnk">Buy Prints</div></Link> 
+   <Link to="Prints" ><div class="tnk">About US</div></Link> 
    <Link to="Contact" ><div class="tnk">Contact</div></Link> 
   </div>
 <span id="cart" class="material-symbols-outlined" onClick={() => setOpen(!open)}>
@@ -35,11 +34,11 @@ shopping_bag
     </Stack>
     <Collapse in={open}>
         <div id="example-collapse-text">
-        <Link to="/" ><div class="tnv">Home</div></Link> 
-   <Link to="product" ><div class="tnv">Products</div></Link> 
-   <Link to="gallery"><div  class="tnv">Gallery</div></Link>  
-   <Link to="Prints" ><div class="tnv">Buy Prints</div></Link> 
-   <Link to="Contact" ><div class="tnv">Contact</div></Link> 
+        <Link to="/" ><div class="tnv"  onClick={() => setOpen(!open)}>Home</div></Link> 
+   <Link to="product" ><div class="tnv"  onClick={() => setOpen(!open)}>Products</div></Link> 
+   <Link to="gallery"><div  class="tnv"  onClick={() => setOpen(!open)}>Gallery</div></Link>  
+   <Link to="Prints" ><div class="tnv"  onClick={() => setOpen(!open)}>About Us</div></Link> 
+   <Link to="Contact" ><div class="tnv"  onClick={() => setOpen(!open)}>Contact</div></Link> 
         </div>
       </Collapse>
       </div>
