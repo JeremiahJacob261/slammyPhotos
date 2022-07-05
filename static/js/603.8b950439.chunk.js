@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkslammy_photos=self.webpackChunkslammy_photos||[]).push([[603],{603:function(e,n,s){s.r(n),s.d(n,{default:function(){return t}});s(2791);var r=s(184);function t(){return(0,r.jsx)("div",{children:(0,r.jsx)("h2",{children:"email sender"})})}}}]);
-//# sourceMappingURL=603.8b950439.chunk.js.map
