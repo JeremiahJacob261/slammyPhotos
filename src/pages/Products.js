@@ -37,8 +37,8 @@ function Products(){
                           {
                           "title":pro.product,
                           "image":pro.imageUrl,
-                          "desc":" ",
-                          "price":pro.price
+                          "price":pro.price,
+                          "desc":pro.desc
                           }
                          ]);
                       })}>{pro.product}</h5></Link>

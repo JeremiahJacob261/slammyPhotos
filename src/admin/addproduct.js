@@ -20,7 +20,8 @@ function Add(){
         await addDoc(collection(db, "slammy"), {
           imageUrl: url,
           product: product,
-          price: price
+          price: price,
+          desc: desc
         });
         return (
           <div>
@@ -59,7 +60,7 @@ function Add(){
             onChange={(price) => {
               setPrice(price.target.value);
             }}
-            placeholder="price in dollars"
+            placeholder="price in Naira"
           />
         </Form.Group>
         <Form.Group className="mb-3" controlId="price">

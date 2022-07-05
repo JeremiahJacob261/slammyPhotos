@@ -17,7 +17,7 @@ function Selector(){
     );
     const renderTooltipc = (props) => (
       <Tooltip id="button-tooltip" {...props}>
-        Edit Products
+        Add Photo to Gallery
       </Tooltip>
     );
  return(
@@ -44,9 +44,10 @@ outgoing_mail
    <Link to="edit">  <OverlayTrigger
     placement="right"
     delay={{ show: 250, hide: 400 }}
-    overlay={renderTooltipc}><Button className="select-control" variant="dark-outline"><span class="material-symbols-outlined">
-change_circle
-</span></Button></OverlayTrigger></Link>
+    overlay={renderTooltipc}>
+      <Button className="select-control" variant="dark-outline"><span class="material-symbols-outlined">
+    add_a_photo
+    </span></Button></OverlayTrigger></Link>
     </Stack>
     </div>
  );

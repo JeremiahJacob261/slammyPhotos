@@ -1,6 +1,8 @@
 import React from 'react';
+import './style.css'
 import { useFlutterwave, closePaymentModal } from 'flutterwave-react-v3';
 export default function Flutterwave() {
+  const {items,setItems} = useContext(CartContext);
   const config = {
     public_key: 'FLWPUBK_TEST-d9e538469fb0704f5cb73af02189bd6d-X',
     tx_ref: Date.now(),
@@ -23,7 +25,7 @@ export default function Flutterwave() {
 
   return (
     <div className="App">
-     <h1>Hello Test user</h1>
+     <h1 className='page-title'>Check Out</h1>
 
       <button
         onClick={() => {
@@ -36,7 +38,7 @@ export default function Flutterwave() {
           });
         }}
       >
-        Payment with React hooks
+        Payment with Flutterwave
       </button>
     </div>
   );
