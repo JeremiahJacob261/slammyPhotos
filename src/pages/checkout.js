@@ -1,6 +1,7 @@
 import React, { useState ,useContext} from "react";
 import { useFlutterwave, closePaymentModal } from 'flutterwave-react-v3';
 import { CartContext } from '../Context';
+import { PaystackButton } from 'react-paystack';
 import {States} from './json/states'
 import {Form,Button,Stack,FloatingLabel, DropdownButton,Dropdown} from "react-bootstrap";
 //end of imports
@@ -10,6 +11,23 @@ function CheckOut() {
         // eslint-disable-next-line
     const {items,setItems} = useContext(CartContext);
     const [names ,setNames] = useState('');
+    const [amount ,setAmount] = useState(3000);
+    const [key ,setKey] = useState('pk_test_ffb9dad50ce0376d309241a4aeeb8f4413dd4419');
+    //start of paystack amalagamation
+    const Paystackconfig = {
+        email,
+        amount,
+        metadata: {
+          names,
+          phone,
+        },
+        key,
+        text: "Pay Now",
+        onSuccess: () =>
+          alert("Thanks for doing business with us! Come back soon!!"),
+        onClose: () => alert("Wait! Don't leave :("),
+      }
+//begining of flutterwave implementation
     const Flutterconfig = {
         public_key: 'FLWPUBK_TEST-d9e538469fb0704f5cb73af02189bd6d-X',
         tx_ref: Date.now(),
@@ -27,9 +45,8 @@ function CheckOut() {
           logo: 'https://st2.depositphotos.com/4403291/7418/v/450/depositphotos_74189661-stock-illustration-online-shop-log.jpg',
         },
       };
-    //flutter wave implememntation
+    //end of flutter wave implememntation
     const handleFlutterPayment = useFlutterwave(Flutterconfig);
-   
     return(
 <>
 <Form>
@@ -86,7 +103,7 @@ function CheckOut() {
     </Dropdown.Item>
   })}
    </DropdownButton>
-    <Button
+    <Button variant="warning"
         onClick={() => {
           handleFlutterPayment({
             callback: (response) => {
@@ -99,6 +116,7 @@ function CheckOut() {
       >
         Pay with Flutterwave
       </Button>
+      <PaystackButton {...Paystackconfig}/>
     </Stack>
     </Form>
 

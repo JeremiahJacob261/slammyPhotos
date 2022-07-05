@@ -17,7 +17,8 @@ function Selector(){
     );
     const renderTooltipc = (props) => (
       <Tooltip id="button-tooltip" {...props}>
-        Add Photo to Gallery
+        Add Photo 
+        to Gallery
       </Tooltip>
     );
  return(

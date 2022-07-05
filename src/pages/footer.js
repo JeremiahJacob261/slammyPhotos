@@ -7,6 +7,7 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import Logo from './photos/favicon.jpg'
 import InstagramIcon from '@mui/icons-material/Instagram';
+import {Link } from 'react-router-dom';
 function Footer(){
   const [emails ,setEmails] = useState();
   const sub =()=>{
@@ -46,6 +47,7 @@ function Footer(){
           <InstagramIcon id="social-icon"/>
           </div>
         </div>
+        <Link to="/admin"><i className="becomeAd">Become AN Admin ...</i></Link>
           </div>
     );
 }

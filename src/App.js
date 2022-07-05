@@ -6,7 +6,7 @@ import { Navigate, Outlet } from 'react-router-dom'
 import {BrowserRouter as Router,Routes,Route} from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 //context
-import { CartContext,CheckOutContext } from './Context';
+import { CartContext,CheckOutContext ,EnterAdminContext} from './Context';
 
 //lazy imports
 const Home = lazy(() => import('./pages/Home'));
@@ -35,15 +35,20 @@ function App() {
   }
  ]);
 const [checkin ,setCheckin] = useState(false);
+const [enteradmin ,setEnteradmin] = useState(false);
 const CartToCheck=()=>{
  return (
      checkin ? <Outlet/> : <Navigate to='/cart'/>
    )
 }
+const EnterAdmin =()=>{
+  return enteradmin ? <Outlet/> : <Navigate to='/login'/>
+}
   return (
     <div className="App">
       <CartContext.Provider value={{items, setItems}}>
       <CheckOutContext.Provider value={{checkin, setCheckin}}>
+      <EnterAdminContext.Provider value={{enteradmin, setEnteradmin}}>
   <Router>
     <AnimatePresence>
     <Header/>
@@ -59,7 +64,7 @@ const CartToCheck=()=>{
    <Route path='checkout' element={<CheckOut/>}/>
    </Route>
    <Route path='login' element={<AdminLogin/>}/>
-   <Route element={<AdminLogin/>}>
+   <Route element={<EnterAdmin/>}>
    <Route path='admin' element={<Admin/>}>
    <Route path='sendemail' element={<SendEmail/>}/>
    <Route path='/admin' element={<Add/>}/>
@@ -73,6 +78,7 @@ const CartToCheck=()=>{
  </AnimatePresence>
  <Action/>
   </Router>
+  </EnterAdminContext.Provider>
   </CheckOutContext.Provider>
   </CartContext.Provider>
   </div>

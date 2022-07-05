@@ -1,6 +1,6 @@
 import React from 'react';
 import { PaystackButton } from 'react-paystack';
-
+import  logo from './photos/favicon.jpg'
 
 const config = {
   reference: (new Date()).getTime().toString(),
@@ -31,6 +31,7 @@ function Payst() {
 
   return (
     <div className="App">
+      <img src={logo} className="App-logo" alt="logo" />
       <PaystackButton {...componentProps} />
     </div>
   );
