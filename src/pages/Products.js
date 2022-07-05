@@ -32,16 +32,30 @@ function Products(){
             return (
              <Col class="product-catalog-col" size="md" md={4}>
                   <img src={pro.imageUrl} id="fire-image" alt="productImage" />
-                      <Link to="/cart"><h5 onClick={(() => {
-                        setItems([
-                          {
-                          "title":pro.product,
-                          "image":pro.imageUrl,
-                          "price":pro.price,
-                          "desc":pro.desc
+                      <Link to="/cart"><h3  style={{fontFamily: 'Katibeh , cursive',color:'black'}}
+                      onClick={(() => {
+                        if(items.title === null){
+                          setItems([
+                            {
+                            "title":pro.product,
+                            "image":pro.imageUrl,
+                            "price":pro.price,
+                            "desc":pro.desc
+                            }
+                           ]);
+                        }else{
+                          if (items.title === pro.product) {
+                            
+                          }else{
+                            setItems(items.concat({
+                              "title":pro.product,
+                              "image":pro.imageUrl,
+                              "price":pro.price,
+                              "desc":pro.desc
+                            }));
                           }
-                         ]);
-                      })}>{pro.product}</h5></Link>
+                        }
+                      })}>{pro.product}</h3></Link>
                      <p>${pro.price}</p>
                      
                     </Col>
